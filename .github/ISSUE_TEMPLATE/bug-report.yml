@@ -1,0 +1,22 @@
+name: Bug report
+description: Something broke
+labels: ["bug"]
+body:
+  - type: input
+    id: fw
+    attributes:
+      label: "Firmware / GoldHEN version"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: "What happened?"
+      description: "And how can it be reproduced?"
+    validations:
+      required: true
+  - type: textarea
+    id: stream
+    attributes:
+      label: "Stream type"
+      description: "MP4 or HLS, resolution, fps; a test URL is the fastest path to a fix"

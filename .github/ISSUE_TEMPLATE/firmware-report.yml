@@ -1,0 +1,34 @@
+name: Firmware report
+description: Tell us whether m0play works on your firmware
+title: "[FW] "
+labels: ["firmware-report"]
+body:
+  - type: input
+    id: fw
+    attributes:
+      label: "PS4 firmware version"
+      placeholder: "e.g. 9.00"
+    validations:
+      required: true
+  - type: input
+    id: goldhen
+    attributes:
+      label: "GoldHEN version"
+      placeholder: "e.g. 2.4b18"
+    validations:
+      required: true
+  - type: dropdown
+    id: works
+    attributes:
+      label: "Does m0play work?"
+      options:
+        - "Yes, everything works"
+        - "Partially (describe below)"
+        - "No (describe below)"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Notes"
+      description: "What did you test, what failed?"
